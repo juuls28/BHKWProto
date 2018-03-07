@@ -22,7 +22,7 @@ public class Output {
         this.value = value;
     }
     
-    public void elektrLeistung(){
+    public void electrPower(){
         String csvFile ="..\\Dateien\\elektrLeistung.csv";
         try (FileWriter writer = new FileWriter(csvFile)) {
             //CSVWriter.writeLine(writer, Arrays.asList("Timestamp", "BHKW elektrische Leistung"));
@@ -35,7 +35,7 @@ public class Output {
         
     }
     
-    public void speicherstand(){
+    public void reservoir(){
         String csvFile ="..\\Dateien\\speicherstand.csv";
         try (FileWriter writer = new FileWriter(csvFile)) {
             //CSVWriter.writeLine(writer, Arrays.asList("Timestamp", "Speicherfuellstand"));
@@ -48,7 +48,7 @@ public class Output {
         
     }
     
-    public void ausspeicherleistung(){
+    public void outputPower(){
         String csvFile ="..\\Dateien\\ausspeicherleistung.csv";
         try (FileWriter writer = new FileWriter(csvFile)) {
             //CSVWriter.writeLine(writer, Arrays.asList("Timestamp", "Auspeicherleistung"));

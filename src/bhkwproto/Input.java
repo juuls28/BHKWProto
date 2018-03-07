@@ -3,7 +3,6 @@ package bhkwproto;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.sql.Timestamp;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -20,9 +19,9 @@ public class Input extends Thread{
         while(true){
             readCSV();
             Output out = new Output(String.valueOf(bestValue));
-            out.ausspeicherleistung();
-            out.elektrLeistung();
-            out.speicherstand();
+            out.outputPower();
+            out.electrPower();
+            out.reservoir();
             
             try {
                 Thread.sleep(15000);
